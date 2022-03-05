@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/Theme.Topcoolcha">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <ImageView
+        android:id="@+id/iv_item_s_help"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_item_s_e_title"
+        app:layout_constraintStart_toEndOf="@+id/tv_item_s_e_title"
+        app:layout_constraintTop_toTopOf="@+id/tv_item_s_e_title"
+        app:srcCompat="@drawable/ic_mark_help" />
+
+
+    <TextView
+        android:id="@+id/iv_item_s_important"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4dp"
+        android:textColor="#FF0000"
+        android:text="*"
+        app:layout_constraintEnd_toStartOf="@+id/tv_item_s_e_title"
+        app:layout_constraintTop_toTopOf="@+id/tv_item_s_e_title" />
+    <TextView
+        android:id="@+id/tv_item_s_e_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="16sp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_item_s_e" />
+
+    <EditText
+        android:id="@+id/et_item_s_e"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:layout_marginEnd="16dp"
+        android:textSize="16sp"
+        android:gravity="top"
+        android:background="@drawable/select_statement"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

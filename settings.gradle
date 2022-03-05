@@ -1,0 +1,22 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+
+        maven {
+            allowInsecureProtocol = true
+            url 'http://coolcha.top:8081/nexus/content/repositories/releases/'
+        }
+    }
+}
+rootProject.name = "top.coolcha.statement"
+include ':app'
+include ':statement'
